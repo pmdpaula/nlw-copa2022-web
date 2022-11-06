@@ -1,44 +1,3 @@
-# Rocketseat - NWL Copa 2022
-
-Projeto de bolão para Copa do mundo. Com backend e aplicações web e mobile
-
-# Aula 01
-
-## Passos
-
-### Configuração
-
-```
-yarn create next-app --typescript
-```
-
-Nome do projeto: web
-
-# Aula 02
-
-## Passos
-
-### Adição de pacotes
-
-#### Tailwind CSS
-
-```
-yarn add -D tailwindcss postcss autoprefixer
-
-npx tailwindcss init -p
-```
-
-Isto cria o arquivo `tailwind.config.js`
-
-1. adicionar em content do arquivo criado
-
-```
-'./src/**/*.tsx',
-```
-
-2. Criado o arquivo `_document.tsx` para inserir as fontes do Google.
-
-```
 import { Html, Head, Main, NextScript } from 'next/document';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any
@@ -56,17 +15,10 @@ export default function Document(props: any) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       </Head>
 
-      <body className="bg-gray-900">
+      <body className="bg-gray-900 bg-app bg-no-repeat bg-cover">
         <Main />
         <NextScript />
       </body>
     </Html>
   );
 }
-```
-
-#### Biblioteca Axios para chamadas HTTP
-
-```
-yarn add axios
-```
